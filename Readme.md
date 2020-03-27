@@ -44,6 +44,32 @@ Show the form for Organizers
 
 ## Blood Banks Table
 Details of the Blood bank
+1. Blood Bank Name
+2. State
+3. District
+4. City
+5. Address
+6. Pincode
+7. Contact No
+8. Mobile
+9. Helpline
+10. Fax
+11. Email
+12. Website
+13. Nodal Officer
+14. Contact of Nodal Officer
+15. Mobile of Nodal Officer
+16. Email of Nodal Officer
+17. Qualification of Nodal Officer
+18. Category
+19. Is Blood Component Available?
+20. Apheresis
+21. Service Time
+22. License No
+23. Date of License Obtained
+24. Date of Renewal
+25. Latitude
+26. Longitude
 
 ## Organizations Table 
 Details of the Organizations - Fullname, number, pincode, address, organization name, KYC, organization proof, Blood bank, Approved or Not
