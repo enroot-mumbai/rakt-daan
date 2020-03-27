@@ -457,12 +457,12 @@ button, .button {
       color: #fff; } }
 
 .button__accent {
-  background-color: #06d19c;
-  border-color: #06d19c;
+  background-color: tomato;
+  border-color: tomato;
   color: #fff; }
   @media (min-width: 992px) {
     .button__accent:hover {
-      background-color: #05bd8d;
+      background-color: tomato;
       border-color: #05bd8d;
       color: #fff; } }
 
@@ -712,8 +712,8 @@ select {
   height: 18px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
-  border-right: 2px solid #06d19c;
-  border-bottom: 2px solid #06d19c;
+  border-right: 2px solid tomato;
+  border-bottom: 2px solid tomato;
   transform: rotate(40deg);
   backface-visibility: hidden;
   transform-origin: 100% 100%; }
@@ -734,7 +734,7 @@ select {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background-color: #6C63FF;
+  background-color: white;
   transition: 0.7s; }
   .navbar--nofixed {
     position: relative;
@@ -746,13 +746,13 @@ select {
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  color: #fff;
+  color: black;
   transition: 0.7s; }
 
 .navbar__logo {
   font-size: 1.325rem;
   transition: 0;
-  color: #fff;
+  color: black;
   text-decoration: none; }
 
 .navbar__menu {
@@ -770,7 +770,7 @@ select {
       .navbar__menu li {
         margin-left: 16pt; } }
   .navbar__menu a {
-    color: #fff; }
+    color:black; }
     @media (min-width: 992px) {
       .navbar__menu a {
         opacity: 0.75; }
@@ -779,7 +779,7 @@ select {
         .navbar__menu a:after {
           display: block;
           content: '';
-          border-bottom: solid 1px #fff;
+          border-bottom: solid 1px black;
           transform: scaleX(0);
           transition: transform 250ms ease-in-out; }
         .navbar__menu a:hover:after {
@@ -798,7 +798,7 @@ select {
   background-color: transparent; }
   .navbar--extended .navbar__inner {
     height: 60px;
-    color: #ffffff; }
+    color: black; }
 
 /*! responsive-nav.js 1.0.39 by @viljamis */
 .nav__mobile ul {
@@ -808,7 +808,7 @@ select {
   display: block;
   list-style: none;
   background-color: #333C44;
-  color: #fff; }
+  color: black; }
 
 .nav__mobile li {
   width: 60%;
@@ -856,12 +856,12 @@ select {
 .hero {
   position: relative;
   width: 100%;
-  background-image: url("../images/evie_default_bg.jpeg");
+  background-color: wheat;
   box-shadow: 0 4px 11px rgba(124, 146, 169, 0.5);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  color: #ffffff; }
+  color: black; }
   .hero__inner {
     position: relative;
     z-index: 3; }
@@ -919,12 +919,12 @@ select {
   margin: 12pt 8pt; }
 
 .hero__button {
-  color: #ffffff;
-  border-color: #ffffff; }
+  color: tomato;
+  border-color: tomato; }
   @media (min-width: 992px) {
     .hero__button:hover {
-      color: #e3e3e3;
-      border-color: #e3e3e3; } }
+      color: tomato;
+      border-color: tomato; } }
 
 .hero__sub {
   -js-display: flex;

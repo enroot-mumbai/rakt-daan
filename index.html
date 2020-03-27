@@ -3,21 +3,28 @@
 <head>
 	<meta class="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Evie by unDraw</title>
+	<title>Raktdaan</title>
 	<!-- Don't forget to add your metadata here -->
-	<link rel='stylesheet' href='css/style.min.css' />
+
+	<!-- Initially it was style.min.css -->
+	<link rel='stylesheet' href='css/style.css' />
+
+	<!-- imported bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
 	<!-- Hero(extended) navbar -->
 	<div class="navbar navbar--extended">
 		<nav class="nav__mobile"></nav>
-		<div class="container">
+
+		<!-- style display:block; was added to fix a issue in navbar after adding bootstrap -->
+		<div style="display: block;" class="container">
 			<div class="navbar__inner">
-				<a href="index.html" class="navbar__logo">Logo</a>
+				<a href="index.html" class="navbar__logo">Raktdaan</a>
 				<nav class="navbar__menu">
 					<ul>
-						<li><a href="#">Option</a></li>
-						<li><a href="#">Option 2</a></li>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Register</a></li>
 					</ul>
 				</nav>
 				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
@@ -26,16 +33,16 @@
 	</div>
 	<!-- Hero unit -->
 	<div class="hero">
-		<div class="hero__overlay hero__overlay--gradient"></div>
+		<!-- <div class="hero__overlay hero__overlay--gradient"></div> -->
 		<div class="hero__mask"></div>
 		<div class="hero__inner">
 			<div class="container">
 				<div class="hero__content">
 					<div class="hero__content__inner" id='navConverter'>
-						<h1 class="hero__title">A production-ready theme for your projects</h1>
-						<p class="hero__text">Evie is an MIT licensed template bundled with a minimal style guide to build websites faster. It is extemely lightweight, customizable and works perfectly on modern browsers.</p>
-						<a href="#" class="button button__accent">Download Evie</a>
-						<a href="#" class="button hero__button">Learn more</a>
+						<h1 class="hero__title">Raktdaan - Kar ke dekho accha lagta hai!</h1>
+						<p class="hero__text">Raktdaan India is a national blood donation initiative by the Health Ministry of India to eradicate the problem of blood scarcity in India. The aim of our campaign is to inculcate the idea of voluntary blood donation in the minds of the common people and raise awareness for the same.</p>
+						<a href="#" class="button button__accent">Donate Blood</a>
+						<a href="#" class="button hero__button">Help a Blood Bank</a>
 					</div>
 				</div>
 			</div>
@@ -49,37 +56,52 @@
 	<!-- Steps -->
 	<div class="steps landing__section">
 		<div class="container">
-			<h2>Who can use Evie?</h2>
-			<p>Here's who we can think of, but surely creative people will surprise us.</p>
+			<h2>List of Blood Banks in India</h2>
+			<p>Blood banks across India</p>
 		</div>
 		<div class="container">
-			<div class="steps__inner">
-				<div class="step">
-					<div class="step__media">
-						<img src="./images/undraw_designer.svg" class="step__image">
-					</div>
-					<h4>Programmers</h4>
-					<p class="step__text">A landing page for your open source projects. Present your solution, easily create docs.</p>
-				</div>
-				<div class="step">
-					<div class="step__media">
-						<img src="./images/undraw_responsive.svg" class="step__image">
-					</div>
-					<h4>Designers</h4>
-					<p class="step__text">A website for your own freebies. Let the world download and use your artwork.</p>
-				</div>
-				<div class="step">
-					<div class="step__media">
-						<img src="./images/undraw_creation.svg" class="step__image">
-					</div>
-					<h4>Makers</h4>
-					<p class="step__text">A great starting point for your web application. Focus on your idea and execution.</p>
-				</div>
-			</div>
+		<div class="row">
+			<table class="table bg-light">
+				<thead>
+					<tr>
+						<th>Sr No.</th>
+						<th>Name</th>
+						<th>Address</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Enroot Mumbai Bank</td>
+						<td>Mumbai, Maharashtra</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Enroot Mumbai Bank</td>
+						<td>Mumbai, Maharashtra</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Enroot Mumbai Bank</td>
+						<td>Mumbai, Maharashtra</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Enroot Mumbai Bank</td>
+						<td>Mumbai, Maharashtra</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Enroot Mumbai Bank</td>
+						<td>Mumbai, Maharashtra</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 		</div>
 	</div>
 	<!-- Expanded sections -->
-	<div class="expanded landing__section">
+	<!-- <div class="expanded landing__section">
 		<div class="container">
 			<div class="expanded__inner">
 				<div class="expanded__media">
@@ -117,9 +139,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Call To Action -->
-	<div class="cta cta--reverse">
+	<!-- <div class="cta cta--reverse">
 		<div class="container">
 			<div class="cta__inner">
 				<h2 class="cta__title">Get started now</h2>
@@ -127,7 +149,7 @@
 				<a href="#" class="button button__accent">Download Evie</a>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Footer -->
 	<div class="footer footer--dark">
 		<div class="container">
@@ -148,21 +170,26 @@
 					</div>
 					<div class="footer__data__item">
 					<div class="footer__row">
-						<a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
+						<a href="#" target="_blank" class="footer__link">GitHub</a>
 					</div>
 					<div class="footer__row">
-						<a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
+						<a href="#" target="_blank" class="footer__link">Twitter</a>
 					</div>
 					<div class="footer__row">
-						<a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
+						<a href="#" target="_blank" class="footer__link">Facebook</a>
 					</div>
 					<div class="footer__row">
-						<a href="./additional.html" class="footer__link">MIT license</a>
+						<a href="#" class="footer__link">MIT license</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 <script src='js/app.min.js'></script>
+
+<!-- bootstrap and dependencies -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
