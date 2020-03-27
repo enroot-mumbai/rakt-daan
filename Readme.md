@@ -39,3 +39,14 @@ Show the form for Organizers
 4. Onclick show Donate Blood form
 
 ![alt text](https://github.com/enroot-mumbai/rakt-daan/blob/develop/donateblood.png)
+
+# Information Architecture
+
+## Blood Banks Table
+Details of the Blood bank
+
+## Organizations Table 
+Details of the Organizations - Fullname, number, pincode, address, organization name, KYC, organization proof, Blood bank, Approved or Not
+
+## Blood Donor Table 
+Name, phone number, age, gender, address, Blood bank and date on which they want to donate, Time (allocated by the Organizer), Donate (true/false)
