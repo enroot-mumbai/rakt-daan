@@ -27,6 +27,8 @@ Finally the NGO Organizer has to see all the entries, maybe create a calendar an
 1. Explain the problem of shortage of blood
 2. Show two buttons - 1. Help Blood Banks & 2. Donate Blood 
 
+![alt text](https://github.com/enroot-mumbai/rakt-daan/blob/develop/landing.png)
+
 ## Help Blood banks for Organizations - 
 Show the form for Organizers
 
@@ -35,3 +37,5 @@ Show the form for Organizers
 2. On the basis of Pincode show list of Blood Banks
 3. Give option near each blood bank to Donate Blood 
 4. Onclick show Donate Blood form
+
+![alt text](https://github.com/enroot-mumbai/rakt-daan/blob/develop/donateblood.png)
