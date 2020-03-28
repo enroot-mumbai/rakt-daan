@@ -24,9 +24,53 @@
 ?>
 <?php include("./components/header.php") ?>
 <?php include("./components/sidebar.php") ?>
-      
 
 <div class="main-panel">
+<?php      
+if($_SESSION['role']=="admin"){
+  ?>
+
+<div class="content-wrapper">
+          
+          <div class="row ml-3">
+          <h2>Number of Orgnisation(s) not verified :- <?php 
+        
+        $sql= "select * from organization where organiserVerified=0";
+        $res = mysqli_query($conn, $sql);
+        $result = mysqli_fetch_assoc($res);
+        $result_rows = mysqli_num_rows($res);
+        echo $result_rows; ?> </h2>    
+          </div>
+          <?php //if(isset($searchBranch['branchName'])){echo $searchBranch['branchName']; } ?>
+  
+          <div class="row ml-3 mt-3 pt-1">
+              <div class="col-md-3 grid-margin stretch-card pt-3">
+                <div class="card" style="background-image: linear-gradient( 156.8deg,  rgba(30,144,131,1) 27.1%, rgba(167,201,125,1) 77.8% );">
+                  <div class="card-body align-items-center  pt-5">
+                  <h1 style="text-align:center;color:white;"><?php echo $result['organisationName']; ?> </h1><br/>
+                    <p class="text-muted" style="text-align:center;color:white!important;"><?php echo $result['organiserName'];?></p>
+                    <a href="server/download.php?location=<?php echo $result['aadharLocation']; ?>">Check Aadhar Card</a>
+                    <form action="server/validate.php" method="POST">
+                    <button type="SUBMIT" name="validate" value="<?php echo $result['organiserEmail']?>" >Validate</button>
+                    </div>
+                </div>
+              </div>
+  
+              <div class="col-md-3 grid-margin stretch-card pt-3">
+                <div class="card" style="background-image: linear-gradient( 156.8deg,  rgba(30,144,231,1) 27.1%, rgba(67,101,225,1) 77.8% );">
+                  <div class="card-body align-items-center  pt-5">
+                  <h1 style="text-align:center;color:white;"><?php echo $searchOrgnisation['totalFootwear']; ?></h1><br/>
+                    <p class="text-muted" style="text-align:center;color:white!important;">Pairs of Footwear</p>
+                    </div>
+                </div>
+              </div>
+          </div>
+</div>
+
+<?php
+}
+else {
+?>
         <div class="content-wrapper">
           
         <div class="row ml-3">
@@ -104,5 +148,7 @@
         </div>
         <!-- content-wrapper ends -->
 
-<?php include("./components/footer.php") ?>
+<?php 
+}
+include("./components/footer.php") ?>
 <?php } ?>

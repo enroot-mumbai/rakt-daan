@@ -3,8 +3,8 @@
 session_start();
 
 $servername = "localhost";
-$username = "ekseanekAdmin";
-$password = "ekseanek!pW";
+$username = "root";
+$password = "";
 
 // Create connection
 $conn = mysqli_connect($servername, $username,$password);

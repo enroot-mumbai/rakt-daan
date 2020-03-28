@@ -55,17 +55,17 @@
             Please click this link to activate your account:
             http://esa.enrootmumbai.in/member/verifyEmail.php?email='$userEmail'&hash=$emailHash"; 
 
-            $headers = array("From: contact@esa.enrootmumbai.in",
-                "Reply-To: contact@esa.enrootmumbai.in",
+            $headers = array("From: contact@enrootmumbai.in",
+                "Reply-To: contact@enrootmumbai.in",
                 "X-Mailer: PHP/" . PHP_VERSION,
-                'Cc: contact@esa.enrootmumbai.in' . "\r\n"
+                'Cc: contact@enrootmumbai.in' . "\r\n"
             );
             $headers = implode("\r\n", $headers);
             if(mail($to, $subject, $message, $headers)){
-                echo '<script>window.location="http://esa.enrootmumbai.in/userMessage.php?msg=Thank you for Registering, please verify your email&msg2=We have sent a verification email to your account kindly verify and login.(During high traffic it might take 2-3 minutes for mail) "</script>';
+                echo '<script>window.location="userMessage.php?msg=Thank you for Registering, please verify your email&msg2=We have sent a verification email to your account kindly verify and login.(During high traffic it might take 2-3 minutes for mail) "</script>';
             }
             else{
-                echo '<script>window.location="http://esa.enrootmumbai.in/userMessage.php?msg=We could not send email&msg2=Kindly check the email id or try again in 2 minutes"</script>';
+                echo '<script>window.location="userMessage.php?msg=We could not send email&msg2=Kindly check the email id or try again in 2 minutes"</script>';
             }
 
          }

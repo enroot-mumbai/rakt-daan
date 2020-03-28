@@ -38,7 +38,7 @@ if(isset($_GET['msg']) && !empty($_GET['msg']) AND isset($_GET['msg2']) && !empt
               <p class="text-danger"><?php echo $msg1 ?></p>
                   <p class="text-primary"><?php echo $msg2 ?></p>
               <!-- <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6> -->
-              <form  action="server/register.php" method="POST" class="pt-3">
+              <form  action="server/register.php" method="POST" class="pt-3" enctype="multipart/form-data">
 
                 <div class="form-group">
                   <input name="organiserName" type="text" required class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Organiser Full Name *">
@@ -74,39 +74,17 @@ if(isset($_GET['msg']) && !empty($_GET['msg']) AND isset($_GET['msg2']) && !empt
 
                 <div class="form-group">
                   <input name="organiserDesignation" type="text" required class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Designation *">
+                </div> 
+
+                <div class="form-group">
+                  <input name="organiserAadharNum" type="text" required class="form-control form-control-lg" id="exampleAadharNum" placeholder="Aadhar Card Number *">
                 </div>
 
-                <!--<div class="form-group">-->
-                <!--  <select name="organiserType" required class="form-control form-control-lg" id="exampleFormControlSelect2">-->
-                <!--    <option>Organization Type *</option>-->
-                <!--    <option>School</option>-->
-                <!--    <option>Chs Society</option>-->
-                <!--    <option>College</option>-->
-                <!--    <option>Corporate</option>-->
-                <!--    <option>Government</option>-->
-                <!--  </select>-->
-                <!--</div>-->
-
-                    <!--<div class="form-group">-->
-                    <!--<label for="exampleInputEmail1">Has Branches</label>-->
-                    <!--      <div class="form-check">-->
-                    <!--        <label class="form-check-label">-->
-                    <!--          <input type="radio" onclick="hideAddress()" class="form-check-input" name="hasBranches" id="optionsRadios1" value="yes">-->
-                    <!--          Yes-->
-                    <!--        <i class="input-helper"></i></label>-->
-                    <!--      </div>-->
-                    <!--      <div class="form-check">-->
-                    <!--        <label class="form-check-label">-->
-                    <!--          <input type="radio" onclick="showAddress()" class="form-check-input" name="hasBranches" id="optionsRadios2" value="no" checked="">-->
-                    <!--          No-->
-                    <!--        <i class="input-helper"></i></label>-->
-                    <!--      </div>-->
-                          
-                    <!--    </div>-->
-                    
-                      <br/><br/>
-                   
-                    
+                <div class="form-group">
+                Upload Aadhar Card: <input name="organiserAadharCard" type="file" required class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Upload Aadhar Card *">
+                </div>
+                <br/><br/>
+    
                     <div id="addressBlock">
                       <p class="card-description">
                       Organisation Address to collect waste from

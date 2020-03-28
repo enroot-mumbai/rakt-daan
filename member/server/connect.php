@@ -7,8 +7,8 @@
 
 session_start();
 $servername = "localhost";
-$username = "ekseanekAdmin";
-$password = "ekseanek!pW";
+$username = "root";
+$password = "";
 
 //session_start();
 // var_dump($_POST);

@@ -4,7 +4,7 @@
    
         $username = stripslashes($_POST['organiserEmail']);
         $password = stripslashes($_POST['password']);
-    
+        // echo $username; exit();
         $search = mysqli_query($conn,"SELECT * FROM organization WHERE organiserEmail='$username'") or die(mysqli_error($conn)); 
         
         $search = mysqli_fetch_assoc($search);

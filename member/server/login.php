@@ -19,8 +19,9 @@
                     $_SESSION["memberLoggedIn"] = 1;
                     $_SESSION['mOrganisationID']=$search['organisationID'];
                     $_SESSION['mBranchID']=$search['branchID'];
+                    $_SESSION['role']=$search['role'];
 
-                    echo '<script>window.location="http://esa.enrootmumbai.in/member/"</script>';
+                    echo '<script>window.location="../../member/"</script>';
                 } else {
                     echo '<script>window.location="http://esa.enrootmumbai.in/userMessage.php?msg=Incorrect Password&msg2=Kindly enter correct password"</script>';
                 }
